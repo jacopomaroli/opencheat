@@ -9,14 +9,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
     - name: PyInstaller Windows
       uses: JackMcKew/pyinstaller-action-windows@main
       with:
         path: src
 
+    - name: Create Archive
+      uses: montudor/action-zip@v0.1.0
+      with:
+        args: zip -qq -r opencheat.zip src/dist/windows/* user_prefs cheats
+
     - uses: xresloader/upload-to-github-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        file: 'src/dist/windows/*;user_prefs/*;cheats/*'
+        file: 'opencheat.zip'
