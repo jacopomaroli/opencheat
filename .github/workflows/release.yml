@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: PyInstaller Windows
-        uses: JackMcKew/pyinstaller-action-windows@main
-        with:
-          path: src
+    - uses: actions/checkout@v2
+    - name: PyInstaller Windows
+      uses: JackMcKew/pyinstaller-action-windows@main
+      with:
+        path: src
 
-      - uses: AButler/upload-release-assets@v2.0
-        with:
-          files: 'src/dist/windows/*;user_prefs/*;cheats/*'
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: AButler/upload-release-assets@v2.0
+      with:
+        files: 'src/dist/windows/*;user_prefs/*;cheats/*'
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
