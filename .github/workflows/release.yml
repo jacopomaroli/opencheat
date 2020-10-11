@@ -18,7 +18,7 @@ jobs:
         path: src
 
     - name: Create Archive
-    - uses: edgarrc/action-7z@v1.0.4
+      uses: edgarrc/action-7z@v1.0.4
         with:
           args: 7z a opencheat.zip ./src/dist/windows/* user_prefs cheats
 
