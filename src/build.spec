@@ -4,9 +4,9 @@ block_cipher = None
 
 
 a = Analysis(['opencheat.py'],
-             pathex=['.venv/Lib/site-packages', 'D:\\PrgCommissionati\\opencheat'],
+             pathex=[],
              binaries=[],
-             datas=[('.venv/Lib/site-packages/mem_edit/VERSION', 'mem_edit')],
+             datas=[('c:/Python37/lib/site-packages/mem_edit/VERSION', 'mem_edit')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
