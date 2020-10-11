@@ -1,0 +1,5 @@
+mem_edit==0.4
+Pypubsub==4.0.3
+wxPython==4.1.0
+pubsub==0.1.2
+pyinstaller==4.0

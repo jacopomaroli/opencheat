@@ -1,0 +1,13 @@
+{
+    "name": "dmc3_se",
+    "processName": "dmc3.exe",
+    "cheats": [
+        {
+            "name": "life",
+            "size": "float",
+            "address": "0x046bdf9c",
+            "lowRange": 0,
+            "highRange": 5000
+        }
+    ]
+}
