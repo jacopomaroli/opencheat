@@ -7,13 +7,13 @@ This should:
 - teach you how a trainer works
 
 ## Installation
-Place the exe in a folder next to the cheats and user_prefs folder.  
-Run the exe and the UI should be pretty intuitive
+Download the latest release archive from [here](https://github.com/jacopomaroli/opencheat/releases/latest/download/opencheat.zip) and unzip it where you prefer.
+Run opencheat.exe and the UI should be pretty intuitive
 
 ## To create cheats
 Just find the right memory location using [cheat engine](https://www.cheatengine.org/) and place a json in the cheats folder using the already existing ones as a template.  
-You can open me a PR afterward.
-Depending on the success of the platform I might improve this in the future.
+You can open a PR to this project afterward.
+Depending on the success of the platform I might improve this workflow in the future.
 
 ## Donations
 If this project makes your life better in any way and you feel like showing appreciation you can buy me a coffee here  
